@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+:root {
+  --primary-color: #1a3f91;
+  --secondary-color: #80bc4f;
+}
+
+:root {
+  --swiper-theme-color: #80bc4f !important;
+}
+
+.text-primary {
+  color: var(--primary-color);
+}
+
+.text-secondary {
+  color: var(--secondary-color);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.component-px {
+  @apply px-8 md:px-16 lg:px-24 xl:px-32;
+}
+
+.component-py {
+  @apply py-8 lg:py-16;
+}
+
+.text-description {
+  @apply text-sm md:text-base lg:text-lg;
+}
+
+.ant-float-btn-primary .ant-float-btn-body {
+  background-color: var(--secondary-color) !important;
+}
+
+:root {
+  --swiper-navigation-size: 20px !important;
+}
+
+.swiper-button-prev:after,
+.swiper-button-next:after {
+  font-weight: bolder !important;
+}
+
+ul, ol {
+  list-style: revert;
+  padding: 15px 40px;
+}
